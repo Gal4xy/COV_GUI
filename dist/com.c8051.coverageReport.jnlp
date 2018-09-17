@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="com.c8051.coverageReport.jnlp">
+  <information>
+    <title>com.c8051.coverageReport</title>
+    <vendor>Galaxy</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="com.c8051.coverageReport.jar" size="4419" download="eager" />
+    <jar href="lib\commons-io-2.6.jar" size="214788" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="com.c8051.coverageReport" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="com.c8051.coveragereport.MainView.main"  name="com.c8051.coverageReport" />
+  <update check="always"/>
+</jnlp>

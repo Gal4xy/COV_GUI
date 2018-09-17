@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.c8051.coveragereport.MainView.MainViewController">
+     <children>
+      <TableView fx:id="table" layoutX="34.0" layoutY="40.0" prefHeight="419.0" prefWidth="704.0">
+        <columns>
+          <TableColumn fx:id="check" editable="false" prefWidth="54.0" text="选择" />
+          <TableColumn fx:id="index" editable="false" prefWidth="52.0" text="序号" />
+            <TableColumn fx:id="date" editable="false" prefWidth="169.0" text="测试时间" />
+            <TableColumn fx:id="name" editable="false" prefWidth="96.0" text="项目名称" />
+            <TableColumn fx:id="cov" editable="false" prefWidth="203.0" text="覆盖率" />
+            <TableColumn fx:id="per" editable="false" prefWidth="126.0" text="百分比" />
+        </columns>
+      </TableView>
+      <Button fx:id="button_sum" layoutX="612.0" layoutY="484.0" mnemonicParsing="false" onAction="#handleStartButtonAction" prefHeight="36.0" prefWidth="153.0" text="累计覆盖率生成" />
+      <Button fx:id="button_return" layoutX="532.0" layoutY="484.0" mnemonicParsing="false" onAction="#handleReturnButtonAction" prefHeight="36.0" prefWidth="50.0" text="返回" />
+   </children>
+</AnchorPane>
